@@ -1,21 +1,14 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
 <html lang="en">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
-		<!-- Заголовок страницы в браузере -->
 		<title>Sports - Mobile App</title>
-		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="css/style.css" />
-		<!-- Кодировка страницы -->
-		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="js/slick.min.js"></script>
-		<script src="js/script.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/slick.min.js"></script>-->
+		
 	</head>
-	<!-- Отображаемое тело страницы -->
 	<body>
 		<div class="wrapper">
 			<div class="content">
@@ -173,25 +166,39 @@
 				</section>
 				<section class="users">
 					<h2 class="users__title title--h2 title--h2--cntr">What Our Users Say</h2>
+					<div class="users__arrows">
+						<div class="arrow arrow--prev"></div>
+						<div class="arrow arrow--next"></div>
+					</div>
 					<div class="users-slider">
-						<div class="slider__item">
-							<img src="img/users/01.png" alt="">
+						<div class="users-slider__inner">
+							<div class="slider__item">
+								<img src="img/users/01.png" alt="">
+							</div>
+							<div class="slider__item">
+								<img src="img/users/02.png" alt="">
+							</div>
+							<div class="slider__item">
+								<img src="img/users/03.png" alt="">
+							</div>
+							<div class="slider__item">
+								<img src="img/users/01.png" alt="">
+							</div>
+							<div class="slider__item">
+								<img src="img/users/02.png" alt="">
+							</div>
+							<div class="slider__item">
+								<img src="img/users/03.png" alt="">
+							</div>
 						</div>
-						<div class="slider__item">
-							<img src="img/users/02.png" alt="">
-						</div>
-						<div class="slider__item">
-							<img src="img/users/03.png" alt="">
-						</div>
-						<div class="slider__item">
-							<img src="img/users/01.png" alt="">
-						</div>
-						<div class="slider__item">
-							<img src="img/users/02.png" alt="">
-						</div>
-						<div class="slider__item">
-							<img src="img/users/03.png" alt="">
-						</div>
+					</div>
+					<div class="users__dots">
+						<span class="dot" id="dot1"></span>
+						<span class="dot" id="dot2"></span>
+						<span class="dot" id="dot3"></span>
+						<span class="dot" id="dot4"></span>
+						<span class="dot" id="dot5"></span>
+						<span class="dot" id="dot6"></span>
 					</div>
 				</section>
 				<section class="partners">
@@ -279,5 +286,6 @@
 				</div>
 			</footer>
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
