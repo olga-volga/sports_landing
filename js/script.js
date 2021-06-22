@@ -18,8 +18,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	slidesField.style.width = 100 * sliderItem.length + '%';// задаем ширину полосы со всеми слайдами
 
-	if (document.documentElement.clientWidth > 426) {
-		slideWidth = +slidesShownWidth.slice(0, slidesShownWidth.length - 2) / 3;
+	if (document.documentElement.clientWidth > 768) {
+		slideWidth = +slidesShownWidth.slice(0, slidesShownWidth.length - 2) / 6;
+	} else if (document.documentElement.clientWidth <= 768 && document.documentElement.clientWidth > 426) {
+		slideWidth = +slidesShownWidth.slice(0, slidesShownWidth.length - 2) / 2.5;
 	} else {
 		slideWidth = +slidesShownWidth.slice(0, slidesShownWidth.length - 2);
 	}
